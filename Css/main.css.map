@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AACD,AAAA,CAAC;AACD,CAAC,AAAA,QAAQ;AACT,CAAC,AAAA,OAAO,CAAC;EACP,UAAU,EAAE,OAAO;CACpB;;AACD,AAAA,CAAC,AAAA,WAAW,CAAC;EACX,UAAU,EAAE,IAAI;CACjB;;AACD,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,KAAK;CACjB;;AACD,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,uBAAuB;EACpC,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,GAAG;EAChB,iBAAiB,EAAE,IAAI;EACvB,UAAU,EAAE,KAAK;CAClB",
+    "sources": [
+        "main.scss",
+        "_variables.scss",
+        "_base.scss",
+        "_header.scss",
+        "_nav.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
