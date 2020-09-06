@@ -1,0 +1,122 @@
+.climb {
+  &__text {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 4.6rem;
+    }
+    &__number {
+      font-size: 20rem;
+      color: #b0b4be;
+      font-family: $font-secondary;
+    }
+    &__word {
+      font-size: 3.2rem;
+      color: #414f6b;
+      font-family: $font-primary;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &__dot {
+      width: 2rem;
+      height: 2rem;
+      background-color: #b0b4be;
+    }
+    &__paragraph {
+      font-size: 1.4rem;
+      text-align: start;
+      font-family: $font-extra;
+      font-weight: 600;
+      padding: 0 12rem;
+        @media only screen and (max-width: $bp-medium) {
+          padding: 1rem 3rem;
+          margin-bottom: 3rem;
+    }
+    }
+  }
+  &__main {
+    height: 80vh;
+    background-image: url('../Assets/background-3.png');
+    background-position: center 50%;
+    background-size: cover;
+    position: relative;
+    &__tabs {
+      display: flex;
+      list-style: none;
+      background-color: #414f6b;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      &__tab {
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: 1rem;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: $font-primary;
+        color: #b0b4be;
+        font-weight: 700;
+
+        position: relative;
+      }
+    }
+    &__schedule {
+      width: 35rem;
+      background-color: rgba($color: #ffffff, $alpha: 0.7);
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      padding: 2rem;
+       @media only screen and (max-width: $bp-small) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+      &__text {
+        color: #414f6b;
+        font-size: 3.2rem;
+        text-transform: uppercase;
+        font-family: $font-primary;
+      }
+
+      &__date {
+        margin: 0.8rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(4) {
+          margin: 2rem 0;
+        }
+        &__time,
+        &__text {
+          font-size: 1.6rem;
+          font-family: $font-extra;
+        }
+      }
+    }
+  }
+}
+
+.active-tab {
+  color: #414f6b;
+  background-color: #b0b4be;
+}
+.active-tab-border {
+  border-bottom: 1px solid #414f6b;
+}
