@@ -1,0 +1,63 @@
+.history {
+  height: 100vh;
+  background-image: url('../Assets/background-2.png');
+  background-size: cover;
+  background-position: center 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 65%;
+    margin: 0 auto;
+    &__container {
+      display: flex;
+    }
+    &__number {
+      font-size: 20rem;
+      color: #63769d;
+      font-family: $font-secondary;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 4.6rem;
+    }
+    &__word {
+      font-size: 3.2rem;
+      color: #414f6b;
+      font-family: $font-primary;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &__dot {
+      width: 2rem;
+      height: 2rem;
+      background-color: #63769d;
+    }
+    &__paragraph {
+      font-size: 1.4rem;
+      text-align: start;
+      font-family: $font-extra;
+      font-weight: 600;
+      margin-top: -6rem;
+      padding: 0 12rem;
+      @media only screen and (max-width: $bp-medium) {
+        padding: 1rem 3rem;
+        background-color: rgba($color: white, $alpha: 0.6);
+        margin-top: 0;
+      }
+    }
+  }
+  &__corousel {
+    background-color: rgba($color: #414f6b, $alpha: 0.9);
+    height: 20rem;
+  }
+}
