@@ -1,0 +1,38 @@
+.nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 2.5rem 7rem;
+  //background-color:grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // position: fixed;
+  z-index: 5;
+  transition: all 0.3s;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    list-style: none;
+    width: 16rem;
+  }
+  &__link {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-family: $font-extra;
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $color-grey-light;
+    }
+  }
+}

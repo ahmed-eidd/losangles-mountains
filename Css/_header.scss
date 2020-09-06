@@ -1,0 +1,26 @@
+.header {
+  height: 100vh;
+  background-image: url('../Assets/background-1.png');
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__text {
+    font-size: 12.5rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-family: $font-secondary;
+    transform: translate(-50%, -50%);
+    color: #414f6b;
+    letter-spacing: 2.8rem;
+  }
+  &_span {
+    display: block;
+    margin-bottom: -9rem;
+    color: #4d4d4d;
+    font-size: 11.5rem;
+    letter-spacing: 2.3rem;
+  }
+}
