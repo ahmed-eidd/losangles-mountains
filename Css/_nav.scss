@@ -35,4 +35,10 @@
       color: $color-grey-light;
     }
   }
+  &__logo {
+    cursor: pointer;
+    img {
+      border-radius: 50%;
+    }
+  }
 }
