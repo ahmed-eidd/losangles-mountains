@@ -24,6 +24,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -53,12 +59,38 @@ body {
   letter-spacing: 2.8rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .header__text {
+    font-size: 9rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__text {
+    font-size: 7rem;
+  }
+}
+
 .header_span {
   display: block;
   margin-bottom: -9rem;
   color: #4d4d4d;
   font-size: 11.5rem;
   letter-spacing: 2.3rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header_span {
+    font-size: 7.5rem;
+    margin-bottom: -5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header_span {
+    font-size: 6.6rem;
+    margin-bottom: -3rem;
+  }
 }
 
 .nav {
@@ -109,5 +141,345 @@ body {
 
 .nav__link:hover {
   color: #b0b4be;
+}
+
+.nav__logo {
+  cursor: pointer;
+}
+
+.nav__logo img {
+  border-radius: 50%;
+}
+
+.history {
+  height: 100vh;
+  background-image: url("../Assets/background-2.png");
+  background-size: cover;
+  background-position: center 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.history__text {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.history__text__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history__text__number {
+  font-size: 20rem;
+  color: #63769d;
+  font-family: "Bebas Neue", cursive;
+}
+
+.history__text__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 4.6rem;
+}
+
+.history__text__word {
+  font-size: 3.2rem;
+  color: #414f6b;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.history__text__dot {
+  width: 2rem;
+  height: 2rem;
+  background-color: #63769d;
+}
+
+.history__text__paragraph {
+  font-size: 1.4rem;
+  text-align: start;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  margin-top: -6rem;
+  padding: 0 12rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .history__text__paragraph {
+    padding: 1rem 3rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-top: 0;
+  }
+}
+
+.history__corousel {
+  background-color: rgba(65, 79, 107, 0.9);
+  height: 20rem;
+}
+
+.climb__text {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .climb__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.climb__text__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.climb__text__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 4.6rem;
+}
+
+.climb__text__number {
+  font-size: 20rem;
+  color: #b0b4be;
+  font-family: "Bebas Neue", cursive;
+}
+
+.climb__text__word {
+  font-size: 3.2rem;
+  color: #414f6b;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.climb__text__dot {
+  width: 2rem;
+  height: 2rem;
+  background-color: #b0b4be;
+}
+
+.climb__text__paragraph {
+  font-size: 1.4rem;
+  text-align: start;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  padding: 0 12rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .climb__text__paragraph {
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.climb__main {
+  height: 80vh;
+  background-image: url("../Assets/background-3.png");
+  background-position: center 50%;
+  background-size: cover;
+  position: relative;
+}
+
+.climb__main__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  background-color: #414f6b;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.climb__main__tabs__tab {
+  cursor: pointer;
+  margin-right: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #b0b4be;
+  font-weight: 700;
+  position: relative;
+}
+
+.climb__main__schedule {
+  width: 35rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .climb__main__schedule {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.climb__main__schedule__text {
+  color: #414f6b;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.climb__main__schedule__date {
+  margin: 0.8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.climb__main__schedule__date:nth-child(4) {
+  margin: 2rem 0;
+}
+
+.climb__main__schedule__date__time, .climb__main__schedule__date__text {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+.active-tab {
+  color: #414f6b;
+  background-color: #b0b4be;
+}
+
+.active-tab-border {
+  border-bottom: 1px solid #414f6b;
+}
+
+.footer {
+  background-color: #414f6b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo__img {
+  border-radius: 50%;
+  -webkit-filter: opacity(0.3);
+          filter: opacity(0.3);
+}
+
+.footer__logo__text {
+  margin-left: 1rem;
+  color: #63769d;
+  font-size: 2.1rem;
+  font-family: "Bebas Neue", cursive;
+}
+
+.footer__logo__text span {
+  font-size: 2.3rem;
+  display: block;
+  margin-top: -1.5rem;
+}
+
+.footer__copyrights {
+  font-style: italic;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  color: #63769d;
 }
 /*# sourceMappingURL=main.css.map */
